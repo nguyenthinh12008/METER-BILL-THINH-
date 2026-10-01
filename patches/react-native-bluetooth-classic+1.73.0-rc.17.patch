@@ -1,0 +1,134 @@
+diff --git a/node_modules/react-native-bluetooth-classic/android/.classpath b/node_modules/react-native-bluetooth-classic/android/.classpath
+index 32d6691..bbe97e5 100644
+--- a/node_modules/react-native-bluetooth-classic/android/.classpath
++++ b/node_modules/react-native-bluetooth-classic/android/.classpath
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <classpath>
+-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-12/"/>
++	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17/"/>
+ 	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
+ 	<classpathentry kind="output" path="bin/default"/>
+ </classpath>
+diff --git a/node_modules/react-native-bluetooth-classic/android/.gradle/7.2/fileChanges/last-build.bin b/node_modules/react-native-bluetooth-classic/android/.gradle/7.2/fileChanges/last-build.bin
+new file mode 100644
+index 0000000..f76dd23
+Binary files /dev/null and b/node_modules/react-native-bluetooth-classic/android/.gradle/7.2/fileChanges/last-build.bin differ
+diff --git a/node_modules/react-native-bluetooth-classic/android/.gradle/7.2/fileHashes/fileHashes.lock b/node_modules/react-native-bluetooth-classic/android/.gradle/7.2/fileHashes/fileHashes.lock
+new file mode 100644
+index 0000000..92f7e1d
+Binary files /dev/null and b/node_modules/react-native-bluetooth-classic/android/.gradle/7.2/fileHashes/fileHashes.lock differ
+diff --git a/node_modules/react-native-bluetooth-classic/android/.gradle/7.2/gc.properties b/node_modules/react-native-bluetooth-classic/android/.gradle/7.2/gc.properties
+new file mode 100644
+index 0000000..e69de29
+diff --git a/node_modules/react-native-bluetooth-classic/android/.gradle/checksums/checksums.lock b/node_modules/react-native-bluetooth-classic/android/.gradle/checksums/checksums.lock
+new file mode 100644
+index 0000000..597fbfd
+Binary files /dev/null and b/node_modules/react-native-bluetooth-classic/android/.gradle/checksums/checksums.lock differ
+diff --git a/node_modules/react-native-bluetooth-classic/android/.gradle/vcs-1/gc.properties b/node_modules/react-native-bluetooth-classic/android/.gradle/vcs-1/gc.properties
+new file mode 100644
+index 0000000..e69de29
+diff --git a/node_modules/react-native-bluetooth-classic/android/.project b/node_modules/react-native-bluetooth-classic/android/.project
+index dcc6865..ad5aef3 100644
+--- a/node_modules/react-native-bluetooth-classic/android/.project
++++ b/node_modules/react-native-bluetooth-classic/android/.project
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <projectDescription>
+-	<name>android</name>
++	<name>react-native-bluetooth-classic</name>
+ 	<comment>Project android created by Buildship.</comment>
+ 	<projects>
+ 	</projects>
+diff --git a/node_modules/react-native-bluetooth-classic/android/.settings/org.eclipse.buildship.core.prefs b/node_modules/react-native-bluetooth-classic/android/.settings/org.eclipse.buildship.core.prefs
+index f31e59e..e479558 100644
+--- a/node_modules/react-native-bluetooth-classic/android/.settings/org.eclipse.buildship.core.prefs
++++ b/node_modules/react-native-bluetooth-classic/android/.settings/org.eclipse.buildship.core.prefs
+@@ -1,13 +1,13 @@
+-arguments=--init-script /var/folders/y3/j3s25xps7b7cxm467m3txhmh0000gn/T/db3b08fc4a9ef609cb16b96b200fa13e563f396e9bb1ed0905fdab7bc3bc513b.gradle --init-script /var/folders/y3/j3s25xps7b7cxm467m3txhmh0000gn/T/52cde0cfcf3e28b8b7510e992210d9614505e0911af0c190bd590d7158574963.gradle
++arguments=
+ auto.sync=false
+ build.scans.enabled=false
+ connection.gradle.distribution=GRADLE_DISTRIBUTION(WRAPPER)
+ connection.project.dir=
+ eclipse.preferences.version=1
+ gradle.user.home=
+-java.home=/Library/Java/JavaVirtualMachines/jdk-11.0.14.jdk/Contents/Home
++java.home=
+ jvm.arguments=
+ offline.mode=false
+-override.workspace.settings=true
+-show.console.view=true
+-show.executions.view=true
++override.workspace.settings=false
++show.console.view=false
++show.executions.view=false
+diff --git a/node_modules/react-native-bluetooth-classic/android/build.gradle b/node_modules/react-native-bluetooth-classic/android/build.gradle
+index 0daf907..5e03ab4 100644
+--- a/node_modules/react-native-bluetooth-classic/android/build.gradle
++++ b/node_modules/react-native-bluetooth-classic/android/build.gradle
+@@ -26,6 +26,10 @@ android {
+     compileSdkVersion getExtOrDefault('compileSdkVersion', 34)
+     buildToolsVersion getExtOrDefault('buildToolsVersion', "34.0.0")
+ 
++    buildFeatures {
++        buildConfig true
++    }
++
+     defaultConfig {
+         minSdkVersion getExtOrDefault('minSdkVersion', 16)
+         targetSdkVersion getExtOrDefault('targetSdkVersion', 34)
+diff --git a/node_modules/react-native-bluetooth-classic/android/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json b/node_modules/react-native-bluetooth-classic/android/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json
+new file mode 100644
+index 0000000..9e26dfe
+--- /dev/null
++++ b/node_modules/react-native-bluetooth-classic/android/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json
+@@ -0,0 +1 @@
++{}
+\ No newline at end of file
+diff --git a/node_modules/react-native-bluetooth-classic/android/build/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar b/node_modules/react-native-bluetooth-classic/android/build/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar
+new file mode 100644
+index 0000000..5ecedbc
+Binary files /dev/null and b/node_modules/react-native-bluetooth-classic/android/build/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar differ
+diff --git a/node_modules/react-native-bluetooth-classic/android/build/intermediates/compile_symbol_list/debug/generateDebugRFile/R.txt b/node_modules/react-native-bluetooth-classic/android/build/intermediates/compile_symbol_list/debug/generateDebugRFile/R.txt
+new file mode 100644
+index 0000000..e69de29
+diff --git a/node_modules/react-native-bluetooth-classic/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties b/node_modules/react-native-bluetooth-classic/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+new file mode 100644
+index 0000000..e434003
+--- /dev/null
++++ b/node_modules/react-native-bluetooth-classic/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+@@ -0,0 +1 @@
++#Sat Aug 22 15:02:46 ICT 2026
+diff --git a/node_modules/react-native-bluetooth-classic/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml b/node_modules/react-native-bluetooth-classic/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+new file mode 100644
+index 0000000..6efdb7b
+--- /dev/null
++++ b/node_modules/react-native-bluetooth-classic/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/nguyenquochung/Desktop/LAPTRINH/MeterBill/node_modules/react-native-bluetooth-classic/android/src/main/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~:!&lt;dir>navigation"><source path="/Users/nguyenquochung/Desktop/LAPTRINH/MeterBill/node_modules/react-native-bluetooth-classic/android/src/main/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/nguyenquochung/Desktop/LAPTRINH/MeterBill/node_modules/react-native-bluetooth-classic/android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~:!&lt;dir>navigation"><source path="/Users/nguyenquochung/Desktop/LAPTRINH/MeterBill/node_modules/react-native-bluetooth-classic/android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~:!&lt;dir>navigation"/><mergedItems/></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-bluetooth-classic/android/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt b/node_modules/react-native-bluetooth-classic/android/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt
+new file mode 100644
+index 0000000..78ac5b8
+--- /dev/null
++++ b/node_modules/react-native-bluetooth-classic/android/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt
+@@ -0,0 +1,2 @@
++R_DEF: Internal format may change without notice
++local
+diff --git a/node_modules/react-native-bluetooth-classic/android/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt b/node_modules/react-native-bluetooth-classic/android/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt
+new file mode 100644
+index 0000000..08f4ebe
+--- /dev/null
++++ b/node_modules/react-native-bluetooth-classic/android/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt
+@@ -0,0 +1 @@
++0 Warning/Error
+\ No newline at end of file
+diff --git a/node_modules/react-native-bluetooth-classic/android/build/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt b/node_modules/react-native-bluetooth-classic/android/build/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt
+new file mode 100644
+index 0000000..1da9a52
+--- /dev/null
++++ b/node_modules/react-native-bluetooth-classic/android/build/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt
+@@ -0,0 +1 @@
++kjd.reactnative.bluetooth
